@@ -13,6 +13,7 @@ install/
 *.swp
 *.swo
 *~
+*.patch
 
 # npmpub files
 src/mraajsJAVASCRIPT_wrap.cxx
