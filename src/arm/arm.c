@@ -31,6 +31,7 @@
 #include "arm/banana.h"
 #include "arm/beaglebone.h"
 #include "arm/phyboard.h"
+#include "arm/cosmic.h"
 #include "arm/raspberry_pi.h"
 #include "mraa_internal.h"
 
@@ -55,6 +56,8 @@ mraa_arm_platform()
                 } else if (strstr(line, "Generic AM33XX")) {
                     if(mraa_file_contains("/proc/device-tree/model", "phyBOARD-WEGA")) {
                         platform_type = MRAA_PHYBOARD_WEGA;
+                    } else if(mraa_file_contains("/proc/device-tree/model", "Phytec AM335x phyBOARD-cosmic")) {
+                        platform_type = MRAA_PHYBOARD_COSMIC;
                     } else {
                         platform_type = MRAA_BEAGLEBONE;
                     }
@@ -116,6 +119,9 @@ mraa_arm_platform()
             break;
         case MRAA_PHYBOARD_WEGA:
             plat = mraa_phyboard();
+            break;
+        case MRAA_PHYBOARD_COSMIC:
+            plat = mraa_cosmic();
             break;
         case MRAA_BANANA:
             plat = mraa_banana();

@@ -28,6 +28,7 @@ Supported Platforms
    * `Banana Pi/Pro <../bananapi.html>`_
    * `Beaglebone Black <../beaglebone.html>`_
    * `phyBOARD-Wega <../phyboard-wega.html>`_
+   * `phyBOARD-cosmic <../phyboard-cosmic.html>`_
    * `Intel NUC NUC5i5MYBE <../nuc5.html>`_
    * `UP <../up.html>`_
    * `UP Squared<../up2.html>`_
