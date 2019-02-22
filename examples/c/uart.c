@@ -36,7 +36,7 @@
 /* mraa header */
 #include "mraa/uart.h"
 
-#define UART 0
+#define UART 1
 
 volatile sig_atomic_t flag = 1;
 
